@@ -10,11 +10,11 @@ function App() {
     document.documentElement.setAttribute("data-theme", isDark ? "abyss" : "light");
   }, [isDark]);
 
-  const [toggle, setToggle] = useState("false");
+  const [toggle, setToggle] = useState(false);
   return (
     <>
       <div className="flex h-screen">
-        <div className={`${toggle ? "block" : "hidden"}`}>
+        <div className={`${toggle ? "lg:block block" : "lg:block hidden"}`}>
           <Sidebar />
         </div>
         <div className="flex flex-col flex-1">

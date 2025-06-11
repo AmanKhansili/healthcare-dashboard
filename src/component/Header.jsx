@@ -5,7 +5,7 @@ export default function Header({ onMenuToggle, isDark, setIsDark }) {
   return (
     <header className="w-full flex justify-between items-center px-6 py-4 bg-base-300 shadow-md">
       <div className="flex items-center gap-4">
-        <button className="btn btn-ghost btn-circle" onClick={onMenuToggle}>
+        <button className="btn btn-ghost btn-circle lg:hidden" onClick={onMenuToggle}>
           <Menu className="w-6 h-6" />
         </button>
         <p className="text-2xl font-bold text-primary hidden lg:block">
